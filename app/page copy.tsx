@@ -57,14 +57,10 @@ export default function Home() {
   return (
     <div
       style={{
-        height: "2890px",
+        width: 360,
+        height: 2838,
         position: "relative",
-        width: "100%",
-        maxWidth: 430, // 💡 모바일 기준폭 + 여유
-        minWidth: 320, // 💡 너무 작은 기기 방지
-
         background: "white",
-        boxShadow: "0 0 10px rgba(0,0,0,0.05)",
       }}
     >
       <div
@@ -102,7 +98,7 @@ export default function Home() {
 
       <div
         style={{
-          width: "100%",
+          width: 360,
           left: 0,
           top: 180,
           position: "absolute",
@@ -223,7 +219,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ width: "100%", height: 287, position: "relative" }}>
+          <div style={{ width: 344, height: 287, position: "relative" }}>
             <div
               style={{
                 width: 96,
@@ -236,15 +232,14 @@ export default function Home() {
               }}
             />
             <img
-              src="hero_img.png"
+              src="https://placehold.co/328x246"
               alt="hero"
               width={328}
               height={246}
               style={{
-                position: "absolute",
+                left: 16,
                 top: 0,
-                left: "50%",
-                transform: "translateX(-50%)",
+                position: "absolute",
                 boxShadow: "0px 0px 8px rgba(0,0,0,0.08)",
                 borderRadius: 20,
                 width: 328,
@@ -573,6 +568,7 @@ export default function Home() {
                   alignSelf: "stretch",
                   display: "inline-flex",
                   justifyContent: "flex-start",
+                  alignItems: "center",
                   gap: 4,
                 }}
               >
@@ -580,12 +576,13 @@ export default function Home() {
                   style={{
                     textAlign: "center",
                     display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "start",
+                    flexDirection: "column",
+                    justifyContent: "center",
                     color: "#095fff",
                     fontSize: 16,
-                    fontFamily: "Pretendard",
-                    fontWeight: 700,
+                    fontFamily:
+                      'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+                    fontWeight: 400,
                     lineHeight: "20.8px",
                     wordWrap: "break-word",
                   }}
@@ -600,8 +597,9 @@ export default function Home() {
                     justifyContent: "center",
                     color: "#095fff",
                     fontSize: 16,
-                    fontFamily: "Pretendard",
-                    fontWeight: 700,
+                    fontFamily:
+                      'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+                    fontWeight: 400,
                     lineHeight: "20.8px",
                     wordWrap: "break-word",
                   }}
@@ -646,16 +644,18 @@ export default function Home() {
               <div
                 style={{
                   display: "flex",
-                  flexDirection: "row",
+                  flexDirection: "column",
                   justifyContent: "center",
                 }}
               >
                 <span
                   style={{
                     color: "#2c374f",
-                    fontSize: 16,
-                    fontFamily: "Pretendard",
+                    fontSize: 14,
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
+                    lineHeight: "20px",
+                    wordWrap: "break-word",
                   }}
                 >
                   이름
@@ -663,10 +663,10 @@ export default function Home() {
                 <span
                   style={{
                     color: "#095fff",
-                    fontSize: 16,
-                    fontFamily: "Pretendard",
+                    fontSize: 14,
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
-                    lineHeight: "130%",
+                    lineHeight: "20px",
                     wordWrap: "break-word",
                   }}
                 >
@@ -720,16 +720,18 @@ export default function Home() {
               <div
                 style={{
                   display: "flex",
-                  flexDirection: "row",
+                  flexDirection: "column",
                   justifyContent: "center",
                 }}
               >
                 <span
                   style={{
                     color: "#2c374f",
-                    fontSize: 16,
-                    fontFamily: "Pretendard",
+                    fontSize: 14,
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
+                    lineHeight: "20px",
+                    wordWrap: "break-word",
                   }}
                 >
                   연락처
@@ -737,10 +739,10 @@ export default function Home() {
                 <span
                   style={{
                     color: "#095fff",
-                    fontSize: 16,
-                    fontFamily: "Pretendard",
+                    fontSize: 14,
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
-                    lineHeight: "130%",
+                    lineHeight: "20px",
                     wordWrap: "break-word",
                   }}
                 >
@@ -800,9 +802,10 @@ export default function Home() {
                   justifyContent: "center",
                   color: "#2c374f",
                   fontSize: 14,
-                  fontFamily: "Pretendard",
+                  fontFamily:
+                    'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
                   fontWeight: 400,
-                  lineHeight: "130%",
+                  lineHeight: "18.2px",
                   wordWrap: "break-word",
                 }}
               >
@@ -848,8 +851,7 @@ export default function Home() {
                       wordWrap: "break-word",
                     }}
                   >
-                    및 <span style={{ textDecoration: "underline" }}>이용</span>
-                    에 동의합니다.*
+                    및 이용에 동의합니다.*
                   </span>
                 </div>
               </label>
@@ -881,7 +883,7 @@ export default function Home() {
                 style={{
                   color: "#fdfdfd",
                   fontSize: 20,
-                  fontFamily: "Paperlogy",
+                  fontFamily: "Paperlogy, sans-serif",
                   fontWeight: 700,
                   wordWrap: "break-word",
                 }}
@@ -917,7 +919,12 @@ export default function Home() {
               gap: 10,
             }}
           >
-            <img src="logo.png" alt="logo" width={34} height={34} />
+            <img
+              src="https://placehold.co/34x34"
+              alt="logo"
+              width={34}
+              height={34}
+            />
             <div
               style={{
                 color: "#111827",
@@ -938,7 +945,8 @@ export default function Home() {
               justifyContent: "center",
               color: "#6a707f",
               fontSize: 14,
-              fontFamily: "Pretendard",
+              fontFamily:
+                'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
               fontWeight: 400,
               lineHeight: "22.4px",
               wordWrap: "break-word",
@@ -955,23 +963,26 @@ export default function Home() {
             인천 오피스 : 인천 연수구 갯벌로12, 송도본원 7층 7-10호 (송도동,
             인천창조경제혁신센터)
           </div>
-          <p
-            style={{
-              fontFamily: "Pretendard",
-              fontWeight: 400,
-              fontSize: "14px",
-              color: "#9EA6B6",
-            }}
-          >
-            © 2025 wiiee. All rights reserved.
-          </p>
         </div>
       </div>
 
+      {/* Top bars */}
       <div
         style={{
-          width: "100%",
+          width: 360,
+          height: 24,
           left: 0,
+          top: 0,
+          position: "absolute",
+          background: "#cecece",
+        }}
+      />
+
+      <div
+        style={{
+          width: 360,
+          left: 0,
+          top: 24,
           position: "absolute",
           display: "inline-flex",
           flexDirection: "column",
@@ -996,6 +1007,7 @@ export default function Home() {
           <div
             style={{
               display: "flex",
+              flexDirection: "column",
               justifyContent: "center",
             }}
           >
@@ -1005,6 +1017,7 @@ export default function Home() {
                 fontSize: 13,
                 fontFamily: "Paperlogy, sans-serif",
                 fontWeight: 400,
+                lineHeight: "16.9px",
                 wordWrap: "break-word",
               }}
             >
@@ -1016,6 +1029,7 @@ export default function Home() {
                 fontSize: 13,
                 fontFamily: "Paperlogy, sans-serif",
                 fontWeight: 700,
+                lineHeight: "16.9px",
                 wordWrap: "break-word",
               }}
             >
@@ -1046,7 +1060,12 @@ export default function Home() {
               gap: 10,
             }}
           >
-            <img src="logo.png" alt="logo" width={34} height={34} />
+            <img
+              src="https://placehold.co/34x34"
+              alt="logo"
+              width={34}
+              height={34}
+            />
             <div
               style={{
                 color: "#111827",

@@ -24,3 +24,65 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Paperlogy */
+@font-face {
+  font-family: "Paperlogy";
+  src: url("/fonts/Paperlogy/Paperlogy-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy";
+  src: url("/fonts/Paperlogy/Paperlogy-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NanumSquare Neo */
+@font-face {
+  font-family: "NanumSquare Neo OTF";
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Rg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquare Neo OTF";
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumSquare Neo OTF";
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Eb.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pretendard */
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("/fonts/Pretendard/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
