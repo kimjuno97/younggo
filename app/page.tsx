@@ -831,24 +831,16 @@ export default function Home() {
                       fontFamily:
                         'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
                       fontWeight: 400,
-                      textDecoration: "underline",
                       wordWrap: "break-word",
                     }}
                   >
-                    개인정보 수집
-                  </span>
-                  <span
-                    style={{
-                      textAlign: "center",
-                      color: "#095fff",
-                      fontSize: 14,
-                      fontFamily:
-                        'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
-                      fontWeight: 400,
-                      wordWrap: "break-word",
-                    }}
-                  >
-                    및 <span style={{ textDecoration: "underline" }}>이용</span>
+                    <a
+                      style={{ textDecoration: "underline" }}
+                      target="_blank"
+                      href="https://radical-basket-e85.notion.site/29c1f6888e5780e3a6c0fc545aa57b0d"
+                    >
+                      개인정보 수집 및 이용
+                    </a>
                     에 동의합니다.*
                   </span>
                 </div>
