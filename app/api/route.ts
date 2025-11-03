@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     if (!res.ok) {
       const text = await res.text();
       console.error("Slack Webhook 실패:", text);
-      return NextResponse.json({ ok: false, error: text }, { status: 500 });
+      return NextResponse.json({ ok: false, error: res.body }, { status: 500 });
     }
 
     // 정상 응답
