@@ -172,7 +172,7 @@ export default function Home() {
                 <span
                   style={{
                     color: "#111827",
-                    fontSize: 34,
+                    fontSize: 36,
                     fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 800,
                     lineHeight: "44.2px",
@@ -187,7 +187,7 @@ export default function Home() {
                 <span
                   style={{
                     color: "#095fff",
-                    fontSize: 34,
+                    fontSize: 36,
                     fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 900,
                     lineHeight: "44.2px",
@@ -204,10 +204,10 @@ export default function Home() {
                 flexDirection: "column",
                 justifyContent: "center",
                 color: "#2c374f",
-                fontSize: 16,
+                fontSize: 18,
                 fontFamily: "Pretendard",
-                fontWeight: 400,
-                lineHeight: "20.8px",
+                fontWeight: 500,
+                lineHeight: "25px",
                 wordWrap: "break-word",
               }}
             >
@@ -547,8 +547,8 @@ export default function Home() {
             >
               단 10명만 오픈 전 할인된 가격으로
               <br />
-              20분 프리토킹을 체험해보세요! 단 돈 8,000원에 영어 회화를 경험할
-              수 있는 기회 ✨
+              20분 프리토킹을 체험해보세요! <br /> 단 돈 8,000원에 영어 회화를
+              경험할 수 있는 기회 ✨
             </div>
           </div>
 
