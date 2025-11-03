@@ -553,10 +553,9 @@ export default function Home() {
                 wordWrap: "break-word",
               }}
             >
-              단 10명만 오픈 전 할인된 가격으로
-              <br />
-              20분 프리토킹을 체험해보세요! <br /> 단 돈 8,000원에 영어 회화를
-              경험할 수 있는 기회 ✨
+              퀄리티는 그대로, 부담은 낮게.
+              <br />월 10만원대 영어회화를 <br />
+              6만 9,900원에 합리적으로 만나보세요.
             </div>
           </div>
 
@@ -1040,7 +1039,7 @@ export default function Home() {
                 wordWrap: "break-word",
               }}
             >
-              단 돈 8천원! 1만원 할인 쿠폰까지!
+              주 3회 월 6만원대 영어회화 먼저 시작!🚀
             </span>
           </div>
         </div>
