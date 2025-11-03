@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "영어의 고수",
-  description: "영어의 고수영어의 고수영어의 고수영어의 고수영어의 고수",
+  description: "필리핀 화상 영어의새로운 기준-영어의 고수",
 };
 
 export default function RootLayout({
