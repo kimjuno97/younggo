@@ -28,14 +28,14 @@ body {
 /* Paperlogy */
 @font-face {
   font-family: "Paperlogy";
-  src: url("/fonts/Paperlogy/Paperlogy-700.woff2") format("woff2");
+  src: url("/fonts/Paperlogy/Paperlogy-7Bold.ttf") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Paperlogy";
-  src: url("/fonts/Paperlogy/Paperlogy-800.woff2") format("woff2");
+  src: url("/fonts/Paperlogy/Paperlogy-8ExtraBold.ttf") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -44,22 +44,30 @@ body {
 /* NanumSquare Neo */
 @font-face {
   font-family: "NanumSquare Neo OTF";
-  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Rg.woff2") format("woff2");
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Rg.otf") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "NanumSquare Neo OTF";
-  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Bd.woff2") format("woff2");
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Bd.otf") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "NanumSquare Neo OTF";
-  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Eb.woff2") format("woff2");
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Eb.otf") format("woff2");
   font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NanumSquare Neo OTF";
+  src: url("/fonts/NanumSquareNeo/NanumSquareNeoOTF-Hv.otf") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

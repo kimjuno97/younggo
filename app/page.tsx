@@ -153,7 +153,7 @@ export default function Home() {
                   justifyContent: "center",
                   color: "#fd437d",
                   fontSize: 20,
-                  fontFamily: "NanumSquare Neo OTF, sans-serif",
+                  fontFamily: "NanumSquare Neo OTF",
                   fontWeight: 800,
                   lineHeight: "26px",
                   wordWrap: "break-word",
@@ -173,7 +173,7 @@ export default function Home() {
                   style={{
                     color: "#111827",
                     fontSize: 34,
-                    fontFamily: "NanumSquare Neo OTF, sans-serif",
+                    fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 800,
                     lineHeight: "44.2px",
                     wordWrap: "break-word",
@@ -188,7 +188,7 @@ export default function Home() {
                   style={{
                     color: "#095fff",
                     fontSize: 34,
-                    fontFamily: "NanumSquare Neo OTF, sans-serif",
+                    fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 900,
                     lineHeight: "44.2px",
                     wordWrap: "break-word",
@@ -205,8 +205,7 @@ export default function Home() {
                 justifyContent: "center",
                 color: "#2c374f",
                 fontSize: 16,
-                fontFamily:
-                  'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+                fontFamily: "Pretendard",
                 fontWeight: 400,
                 lineHeight: "20.8px",
                 wordWrap: "break-word",
@@ -223,7 +222,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div style={{ width: "100%", height: 287, position: "relative" }}>
+          <div
+            style={{
+              width: "100%",
+              height: 327,
+              position: "relative",
+            }}
+          >
             <div
               style={{
                 width: 96,
@@ -238,17 +243,14 @@ export default function Home() {
             <img
               src="hero_img.png"
               alt="hero"
-              width={328}
-              height={246}
               style={{
                 position: "absolute",
                 top: 0,
                 left: "50%",
                 transform: "translateX(-50%)",
-                boxShadow: "0px 0px 8px rgba(0,0,0,0.08)",
                 borderRadius: 20,
-                width: 328,
-                height: 246,
+                width: "100%",
+                padding: "0px 12px",
               }}
             />
           </div>
@@ -297,7 +299,7 @@ export default function Home() {
                   justifyContent: "center",
                   color: "#095fff",
                   fontSize: 14,
-                  fontFamily: "NanumSquare Neo OTF, sans-serif",
+                  fontFamily: "NanumSquare Neo OTF",
                   fontWeight: 900,
                   lineHeight: "16px",
                   wordWrap: "break-word",
@@ -314,7 +316,7 @@ export default function Home() {
                 justifyContent: "center",
                 color: "#111827",
                 fontSize: 32,
-                fontFamily: "NanumSquare Neo OTF, sans-serif",
+                fontFamily: "NanumSquare Neo OTF",
                 fontWeight: 800,
                 lineHeight: "41.6px",
                 wordWrap: "break-word",
@@ -416,7 +418,7 @@ export default function Home() {
                     alignSelf: "stretch",
                     color: "#111827",
                     fontSize: 20,
-                    fontFamily: "NanumSquare Neo OTF, sans-serif",
+                    fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 800,
                     lineHeight: "26px",
                     wordWrap: "break-word",
@@ -501,7 +503,7 @@ export default function Home() {
                     justifyContent: "center",
                     color: "#095fff",
                     fontSize: 14,
-                    fontFamily: "NanumSquare Neo OTF, sans-serif",
+                    fontFamily: "NanumSquare Neo OTF",
                     fontWeight: 900,
                     lineHeight: "16px",
                     wordWrap: "break-word",
@@ -519,7 +521,7 @@ export default function Home() {
                   justifyContent: "center",
                   color: "#111827",
                   fontSize: 32,
-                  fontFamily: "NanumSquare Neo OTF, sans-serif",
+                  fontFamily: "NanumSquare Neo OTF",
                   fontWeight: 800,
                   lineHeight: "41.6px",
                   wordWrap: "break-word",
@@ -537,8 +539,7 @@ export default function Home() {
                 justifyContent: "center",
                 color: "#2c374f",
                 fontSize: 16,
-                fontFamily:
-                  'Pretendard, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+                fontFamily: "Pretendard",
                 fontWeight: 400,
                 lineHeight: "20.8px",
                 wordWrap: "break-word",
@@ -560,12 +561,13 @@ export default function Home() {
               justifyContent: "flex-start",
               alignItems: "flex-start",
               gap: 6,
+              whiteSpace: "pre-line", // ✅ 핵심 추가
             }}
           >
             {[
               "신청 후 랜덤 선별하여 10명에게 연락드립니다.",
               "연락 후 결제와 스케줄 조율을 진행합니다.",
-              "신청자 전원에게 플랫폼 오픈 후 사용할 수 있는 10,000원 쿠폰을 증정합니다.",
+              "신청자 전원에게 플랫폼 오픈 후 사용할 수 있는\n 10,000원 쿠폰을 증정합니다.",
             ].map((text, i) => (
               <div
                 key={i}
@@ -914,7 +916,7 @@ export default function Home() {
               style={{
                 color: "#111827",
                 fontSize: 22,
-                fontFamily: "Paperlogy, sans-serif",
+                fontFamily: "Paperlogy",
                 fontWeight: 800,
                 wordWrap: "break-word",
               }}
@@ -942,7 +944,7 @@ export default function Home() {
             <br />
             Email: wiiee@wiiee.co.kr
             <br />
-            과천 오피스 : 경기 과천시 과천대로7길 65 과천상상자이타워 8동 2호
+            과천 오피스 : 경기 과천시 과천대로7길 65 과천상상자이타워 B동 205호
             <br />
             인천 오피스 : 인천 연수구 갯벌로12, 송도본원 7층 7-10호 (송도동,
             인천창조경제혁신센터)
@@ -962,9 +964,12 @@ export default function Home() {
 
       <div
         style={{
+          position: "fixed",
           width: "100%",
-          left: 0,
-          position: "absolute",
+          left: "50%",
+          transform: "translateX(-50%)",
+          maxWidth: 430, // 💡 모바일 기준폭 + 여유
+          minWidth: 320, // 💡 너무 작은 기기 방지
           display: "inline-flex",
           flexDirection: "column",
           justifyContent: "flex-start",
@@ -995,18 +1000,18 @@ export default function Home() {
               style={{
                 color: "#fdfdfd",
                 fontSize: 13,
-                fontFamily: "Paperlogy, sans-serif",
+                fontFamily: "Paperlogy",
                 fontWeight: 400,
                 wordWrap: "break-word",
               }}
             >
-              지금 사전 신청하면{" "}
+              지금 사전 신청하면&nbsp;
             </span>
             <span
               style={{
                 color: "#fdfdfd",
                 fontSize: 13,
-                fontFamily: "Paperlogy, sans-serif",
+                fontFamily: "Paperlogy",
                 fontWeight: 700,
                 wordWrap: "break-word",
               }}
@@ -1043,7 +1048,7 @@ export default function Home() {
               style={{
                 color: "#111827",
                 fontSize: 22,
-                fontFamily: "Paperlogy, sans-serif",
+                fontFamily: "Paperlogy",
                 fontWeight: 800,
                 wordWrap: "break-word",
               }}
@@ -1074,7 +1079,7 @@ export default function Home() {
               style={{
                 color: "#fdfdfd",
                 fontSize: 16,
-                fontFamily: "Paperlogy, sans-serif",
+                fontFamily: "Paperlogy",
                 fontWeight: 700,
                 wordWrap: "break-word",
               }}
