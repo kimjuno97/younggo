@@ -25,6 +25,14 @@ export default function Home() {
       alert("연락처를 입력해주세요.");
       return;
     }
+
+    /// ✅ 전화번호 포맷 검증 추가
+    const phoneRegex = /^01[016789]-\d{3,4}-\d{4}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      alert("휴대폰 번호 형식이 올바르지 않습니다. 예: 010-1234-5678");
+      return;
+    }
+
     if (!agreed) {
       alert("개인정보 수집 및 이용에 동의해주세요.");
       return;
@@ -765,7 +773,23 @@ export default function Home() {
               >
                 <input
                   value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  onChange={(e) => {
+                    let value = e.target.value.replace(/[^0-9]/g, ""); // 숫자만 남기기
+
+                    // ✅ 010-xxxx-xxxx 형태로 포맷
+                    if (value.length < 4) {
+                      value = value;
+                    } else if (value.length < 8) {
+                      value = `${value.slice(0, 3)}-${value.slice(3)}`;
+                    } else {
+                      value = `${value.slice(0, 3)}-${value.slice(
+                        3,
+                        7
+                      )}-${value.slice(7, 11)}`;
+                    }
+
+                    setPhoneNumber(value);
+                  }}
                   placeholder="010-1234-5678"
                   inputMode="tel"
                   aria-label="연락처"

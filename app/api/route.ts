@@ -29,9 +29,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, message: "Slack으로 전송 완료" });
   } catch (error) {
     console.error(error);
-    return NextResponse.json(
-      { ok: false, error: String(error) },
-      { status: 500 }
-    );
+    return NextResponse.json({ ok: false, error }, { status: 500 });
   }
 }
